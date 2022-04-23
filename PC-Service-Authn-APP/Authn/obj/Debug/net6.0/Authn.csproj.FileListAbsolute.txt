@@ -1,0 +1,569 @@
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\appsettings.Development.json
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\appsettings.json
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Authn.staticwebassets.runtime.json
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Authn.exe
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Authn.deps.json
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Authn.runtimeconfig.json
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Authn.pdb
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.csproj.AssemblyReference.cache
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.AssemblyInfoInputs.cache
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.AssemblyInfo.cs
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.csproj.CoreCompileInputs.cache
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.MvcApplicationPartsAssemblyInfo.cache
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.RazorAssemblyInfo.cache
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.RazorAssemblyInfo.cs
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\staticwebassets.build.json
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\staticwebassets.development.json
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\scopedcss\bundle\Authn.styles.css
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\scopedcss\projectbundle\Authn.bundle.scp.css
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\refint\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.pdb
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.genruntimeconfig.cache
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\ref\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Humanizer.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\SQLitePCLRaw.core.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\obj\Debug\net6.0\Authn.csproj.CopyComplete
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\EntityFramework.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Data.SQLite.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.CodeDom.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Data.SQLite.EF6.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\linux-x64\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\osx-x64\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-x64\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-x86\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\MessagePack.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\MessagePack.Annotations.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.Build.Locator.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.Configuration.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.Frameworks.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.LibraryModel.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.Packaging.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.ProjectModel.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.Protocol.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Composition.AttributedModel.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Composition.Convention.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Composition.Hosting.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Composition.Runtime.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\System.Composition.TypedParts.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+D:\Code\Useful_DotNet_Apps\Authn\Authn\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\appsettings.Development.json
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\appsettings.json
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Authn.staticwebassets.runtime.json
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Authn.exe
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Authn.deps.json
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Authn.runtimeconfig.json
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Authn.pdb
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\EntityFramework.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Humanizer.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\MessagePack.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\MessagePack.Annotations.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.Build.Locator.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.Configuration.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.Frameworks.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.LibraryModel.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.Packaging.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.ProjectModel.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.Protocol.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\SQLitePCLRaw.core.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Data.SQLite.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.CodeDom.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Composition.AttributedModel.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Composition.Convention.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Composition.Hosting.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Composition.Runtime.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Composition.TypedParts.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Data.SQLite.EF6.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\linux-x64\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\osx-x64\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-x64\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win-x86\native\SQLite.Interop.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.csproj.AssemblyReference.cache
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.AssemblyInfoInputs.cache
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.AssemblyInfo.cs
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.csproj.CoreCompileInputs.cache
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.MvcApplicationPartsAssemblyInfo.cache
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.RazorAssemblyInfo.cache
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.RazorAssemblyInfo.cs
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\staticwebassets.build.json
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\staticwebassets.development.json
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\scopedcss\bundle\Authn.styles.css
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\scopedcss\projectbundle\Authn.bundle.scp.css
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.csproj.CopyComplete
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\refint\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.pdb
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.genruntimeconfig.cache
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\ref\Authn.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Code\Useful_DotNet_Apps\Authn - Copy (2)\Authn\obj\Debug\net6.0\Authn.MvcApplicationPartsAssemblyInfo.cs

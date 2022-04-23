@@ -1,0 +1,79 @@
+﻿using Authn.DataDAO;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+
+namespace Authn.Controllers
+{
+    public class LoginController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+        [HttpGet("login")]
+        public IActionResult Login(string returnUrl)
+        {
+            ViewData["returnUrl"] = returnUrl;
+            return View();
+        }
+        [HttpGet("register")]
+        public IActionResult Register(string returnUrl)
+        {
+            ViewData["returnUrl"] = returnUrl;
+            return View();
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> ValidateLogin(string userName, string password, string returnUrl)
+        {
+            UserAuthDB claim = new UserAuthDB(userName, password);
+            Dictionary<string, string> userInfo;
+            List<string> roles;
+            (userInfo, roles) = claim.ValidateUser();
+            ViewData["returnUrl"] = returnUrl;
+            if (userInfo.ContainsKey("UserName"))
+            {
+                var claims = new List<Claim>();
+                claims.Add(new Claim("userName", userInfo["UserName"]));
+                claims.Add(new Claim(ClaimTypes.Name, userInfo["FirstName"]));
+                claims.Add(new Claim(ClaimTypes.NameIdentifier, userInfo["LastName"]));
+                claims.Add(new Claim(ClaimTypes.Email, userInfo["Email"]));
+                foreach (var role in roles)
+                {
+                    claims.Add(new Claim(ClaimTypes.Role, role));
+                }
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+                await HttpContext.SignInAsync(claimsPrincipal);
+                if (returnUrl != null)
+                {
+                    return Redirect(returnUrl);
+                }
+                else
+                {
+                    return Redirect("/Home/Index");
+                }
+
+            }
+            TempData["error"] = "User name or passowrd is incorrect. Please try again";
+            return View("login");
+        }
+        [Authorize]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return Redirect("/");
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [HttpGet("denied")]
+        public IActionResult Denied()
+        {
+            return View();
+        }
+
+    }
+}
