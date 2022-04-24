@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3aqQMU4ktoakUAKrPRtLVI7BgzMnjMzuoV7W7LUT6GHK1ifwOiRZnFq9bsYPojQlUemSEANavAsyiDzSgiexRg==",
+  "dgSpecHash": "pKh6ARe9Ic9W2yKw21rTnyK5Z0IcEb60r2LuDXG0zkaPzNcV1riQxXRpReT9KStP9fvAYle/4qF2ZxTPG1GhGw==",
   "success": true,
-  "projectFilePath": "D:\\Code\\Useful_DotNet_Apps\\Authn - Copy (2)\\Authn\\Authn.csproj",
+  "projectFilePath": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\Authn.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\p1\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\p1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

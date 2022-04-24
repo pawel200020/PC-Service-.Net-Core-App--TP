@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Authn.Models;
 
 namespace Authn.Data
 {
@@ -42,5 +43,7 @@ namespace Authn.Data
             }
             );
         }
+
+        public DbSet<Authn.Models.AppUserVM> AppUserVM { get; set; }
     }
 }

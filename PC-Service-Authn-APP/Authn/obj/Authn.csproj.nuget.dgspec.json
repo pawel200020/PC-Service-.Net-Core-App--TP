@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Useful_DotNet_Apps\\Authn - Copy (2)\\Authn\\Authn.csproj": {}
+    "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\Authn.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Useful_DotNet_Apps\\Authn - Copy (2)\\Authn\\Authn.csproj": {
+    "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\Authn.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Useful_DotNet_Apps\\Authn - Copy (2)\\Authn\\Authn.csproj",
+        "projectUniqueName": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\Authn.csproj",
         "projectName": "Authn",
-        "projectPath": "D:\\Code\\Useful_DotNet_Apps\\Authn - Copy (2)\\Authn\\Authn.csproj",
+        "projectPath": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\Authn.csproj",
         "packagesPath": "C:\\Users\\p1\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Useful_DotNet_Apps\\Authn - Copy (2)\\Authn\\obj\\",
+        "outputPath": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
