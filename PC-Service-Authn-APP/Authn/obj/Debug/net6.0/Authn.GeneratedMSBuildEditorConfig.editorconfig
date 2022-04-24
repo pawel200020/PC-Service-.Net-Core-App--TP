@@ -15,10 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Code\UJ\Team_Project\PC-Service-Authn-APP\Authn
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Home/Denied.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW5pZWQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -29,6 +25,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Home/Secured.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWN1cmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/Denied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/login.cshtml]

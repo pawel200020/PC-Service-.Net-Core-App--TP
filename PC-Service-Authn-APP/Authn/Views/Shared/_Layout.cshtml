@@ -1,4 +1,23 @@
-﻿<!DOCTYPE html>
+﻿@{
+    bool isAdmin()
+    {
+        foreach(var item in User.Claims)
+        {
+            if(@item.Type=="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"){
+                if (@item.Value == "Admin")
+                {
+                    return true;
+                }else
+                {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -28,7 +47,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
                         </li>
-                        
+                        @if (isAdmin())
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AdminPanel">Admin Panel</a>
+                            </li>
+                            
+                        }
+                        @if(User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UserPanel">User Panel</a>
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

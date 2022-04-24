@@ -21,8 +21,18 @@ namespace Authn.Controllers
         {
             return View();
         }
-        [Authorize(Roles ="Admin")]
+        [Authorize]
         public IActionResult Secured()
+        {
+            return View();
+        }
+        [Authorize]
+        public IActionResult UserPanel()
+        {
+            return View();
+        }
+        [Authorize(Roles = "Admin")]
+        public IActionResult AdminPanel()
         {
             return View();
         }

@@ -9,12 +9,8 @@ namespace Authn.Models
 
         [Required(ErrorMessage = "Please provide username", AllowEmptyStrings = false)]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "User Name must be 3 char long.")]
-        [Display(Name = "Customized Inherited Name")]
+        [Display(Name = "User name")]
         public string UserName { get; set; }
-
-        public string Provider { get; set; }
-
-        public string NameIdentifier { get; set; }
 
         [Display(Name = "Password")]
         [Required(ErrorMessage = "Password is required", AllowEmptyStrings = false)]
@@ -46,18 +42,37 @@ namespace Authn.Models
         [DataType(DataType.PhoneNumber, ErrorMessage = "Not a number")]
         [RegularExpression(@"^\d+$")]
         [Required(ErrorMessage = "{0} is required")]
-        [Range(0, 30, ErrorMessage = "Please use values between 0 to 30")]
         [StringLength(9,MinimumLength =9, ErrorMessage ="Phone number must have 9 digits")]
         [Display(Name = "Phone number")]
         public string Mobile { get; set; }
 
+        [Required(ErrorMessage = "Please provide an address", AllowEmptyStrings = false)]
+        [StringLength(50, MinimumLength = 3, ErrorMessage = "Address must be 3 char long.")]
+        [Display(Name = "Address")]
+        public string Address { get; set; }
+        [Required(ErrorMessage = "Please provide a city name", AllowEmptyStrings = false)]
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "this filed must be 2 char long.")]
+        [Display(Name = "City and zip Code")]
+        public string City { get; set; }
+        [Required(ErrorMessage = "Please provide a country name", AllowEmptyStrings = false)]
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "City must be 2 char long.")]
+        [Display(Name = "Country")]
+        public string Country { get; set; }
         public string Roles { get; set; }
-
         public List<string> RoleList
         {
             get
             {
-                return Roles.Split(',').ToList();
+                if(Roles == null)
+                {
+                    Roles = "";
+                    return new List<string>();
+                }
+                else
+                {
+                    return Roles.Split(',').ToList();
+                }
+                
             }
         }
     }

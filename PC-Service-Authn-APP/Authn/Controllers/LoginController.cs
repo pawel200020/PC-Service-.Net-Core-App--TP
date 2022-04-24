@@ -1,4 +1,5 @@
 ﻿using Authn.DataDAO;
+using Authn.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -73,6 +74,23 @@ namespace Authn.Controllers
         public IActionResult Denied()
         {
             return View();
+        }
+        [HttpPost("register")]
+        public async Task<IActionResult> ProcessRegister(AppUserVM user)
+        {
+
+            UserAddDB usertoadd = new UserAddDB(user);
+            if (usertoadd.AddUser())
+            {
+                TempData["register"] = "Account has been successfully created. You can sign in.";
+                return View("login");
+            }
+            else
+            {
+                TempData["error"] = "User with provided userName or Email already exists, please try again";
+                return View("Register");
+            }
+            
         }
 
     }

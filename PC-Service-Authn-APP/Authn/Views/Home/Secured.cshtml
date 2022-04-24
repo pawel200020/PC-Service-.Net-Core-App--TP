@@ -2,9 +2,36 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    bool isAdmin()
+    {
+        foreach(var item in User.Claims)
+        {
+            if(@item.Type=="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"){
+                if (@item.Value == "Admin")
+                {
+                    return true;
+                }else
+                {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
 }
+
 <h1>This is top secret</h1>
 <div> @User.Identity.Name</div>
 @foreach(var item in @User.Claims){
     <div>@item.Type: @item.Value</div>
+    @if(@item.Type=="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"){
+        @if (@item.Value == "Admin")
+        {
+            <p>jest pan adminem</p>
+        }else
+        {
+            <p>jest pan cieciem</p>
+        }
+
+}
 }

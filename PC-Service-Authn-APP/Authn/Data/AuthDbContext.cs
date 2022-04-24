@@ -24,6 +24,9 @@ namespace Authn.Data
                 entity.Property(e => e.FirstName).HasMaxLength(250);
                 entity.Property(e => e.LastName).HasMaxLength(250);
                 entity.Property(e => e.Mobile).HasMaxLength(250);
+                entity.Property(e => e.Address).HasMaxLength(250);
+                entity.Property(e => e.City).HasMaxLength(250);
+                entity.Property(e => e.Country).HasMaxLength(250);
                 entity.Property(e => e.Roles).HasMaxLength(1000);
 
                 entity.HasData(new AppUser
@@ -37,6 +40,9 @@ namespace Authn.Data
                     FirstName = "Bob",
                     LastName = "Tester",
                     Mobile = "333 333 333",
+                    Address = "Rzebika 1/3",
+                    City = "Krakow",
+                    Country = "Poland",
                     Roles ="Admin"
 
                 });
