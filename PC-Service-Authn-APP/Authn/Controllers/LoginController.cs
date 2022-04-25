@@ -6,11 +6,30 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Microsoft.Extensions.Configuration;
+using System.Configuration;
 
 namespace Authn.Controllers
 {
     public class LoginController : Controller
     {
+
+        private readonly IConfiguration _configuration;
+        
+
+        public LoginController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+            
+        }
+        //List<AppUser> users = (new UserGetAllDB(_configuration.GetConnectionString("DefaultConnection"))).getAllUsers();
+
+
+
+
+
+
+        //List Main Element
         [Authorize(Roles ="Admin")]
         public IActionResult List()
         {
@@ -18,20 +37,69 @@ namespace Authn.Controllers
             List<AppUser> users = allUsers.getAllUsers();
             return View(users);
         }
+
+        //CRUD HTTP GET operations
+        [HttpGet("create")]
+        [Authorize(Roles ="Admin")]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpGet("details")]
+        public IActionResult Details(int id)
+        {
+            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(oneUserDB.getUser());
+        }
+        [HttpGet("edit")]
         public IActionResult Edit(int id)
         {
             var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
             return View(oneUserDB.getUserVM());
         }
+        [HttpGet("changePassword")]
+        public IActionResult ChangePassword(int id)
+        {
+            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(oneUserDB.getUserVM());
+        }
+        [HttpGet("delete")]
+        public IActionResult Delete(int id)
+        {
+            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(oneUserDB.getUserVM());
+        }
+
+
+        //CRUD HTTP POST operations
+        [HttpPost("create")]
+        public IActionResult ProcessCreate(AppUserVM user)
+        {
+            UserAddEditDeleteDB adderService = new UserAddEditDeleteDB(user);
+            if (adderService.AddUser())
+            {
+                TempData["pass"] = "Account has been successfully Added. You can sign in.";
+                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                List<AppUser> users = allUsers.getAllUsers();
+                return View("list", users);
+            }
+            else
+            {
+                TempData["error"] = "some error occured please try again later";
+                return View("list");
+            }
+        }
         [HttpPost("Edit")]
-        public async Task<IActionResult> ProcessEdit(AppUserVM user)
+        public IActionResult ProcessEdit(AppUserVM user)
         {
 
-            //UserAddDB usertoadd = new UserAddDB(user);
-            if (true)
+            UserAddEditDeleteDB usertoedit = new UserAddEditDeleteDB(user);
+            if (usertoedit.EditUser())
             {
                 TempData["pass"] = "Account has been successfully modfied. You can sign in.";
-                return View("list");
+                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                List<AppUser> users = allUsers.getAllUsers();
+                return View("list", users);
             }
             else
             {
@@ -40,27 +108,54 @@ namespace Authn.Controllers
             }
 
         }
-
-
-        [Authorize(Roles = "Admin")]
-        public IActionResult Details(int id)
+        [HttpPost("ChangePassword")]
+        public IActionResult ProcessChangePassword(AppUserVM user)
         {
-            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
-            return View(oneUserDB.getUser());
+
+            UserAddEditDeleteDB usertoedit = new UserAddEditDeleteDB(user);
+            if (usertoedit.ChangeUserPassword())
+            {
+                TempData["pass"] = "Password has been successfuly changed";
+                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                List<AppUser> users = allUsers.getAllUsers();
+                return View("list", users);
+            }
+            else
+            {
+                TempData["error"] = "some error occured please try again later";
+                return View("list");
+            }
+
         }
+        [HttpPost("delete")]
+        public IActionResult ProcessDelete(AppUserVM user)
+        {
+            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", user.UserId);
+            user = oneUserDB.getUserVM();
+            UserAddEditDeleteDB usertodelete = new UserAddEditDeleteDB(user);
+
+            if (usertodelete.DeleteUser())
+            {
+                TempData["pass"] = "Account has been successfully removed";
+                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                List<AppUser> users = allUsers.getAllUsers();
+                return View("list", users);
+            }
+            else
+            {
+                TempData["error"] = "some error occured please try again later";
+                return View("list");
+            }
+
+        }
+     
+        //Login GET & POST
         [HttpGet("login")]
         public IActionResult Login(string returnUrl)
         {
             ViewData["returnUrl"] = returnUrl;
             return View();
         }
-        [HttpGet("register")]
-        public IActionResult Register(string returnUrl)
-        {
-            ViewData["returnUrl"] = returnUrl;
-            return View();
-        }
-
         [HttpPost("login")]
         public async Task<IActionResult> ValidateLogin(string userName, string password, string returnUrl)
         {
@@ -96,24 +191,19 @@ namespace Authn.Controllers
             TempData["error"] = "User name or passowrd is incorrect. Please try again";
             return View("login");
         }
-        [Authorize]
-        public async Task<IActionResult> Logout()
-        {
-            await HttpContext.SignOutAsync();
-            return Redirect("/");
-        }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        [HttpGet("denied")]
-        public IActionResult Denied()
+        //Register GET & POST
+        [HttpGet("register")]
+        public IActionResult Register(string returnUrl)
         {
+            ViewData["returnUrl"] = returnUrl;
             return View();
         }
         [HttpPost("register")]
-        public async Task<IActionResult> ProcessRegister(AppUserVM user)
+        public IActionResult ProcessRegister(AppUserVM user)
         {
 
-            UserAddDB usertoadd = new UserAddDB(user);
+            UserAddEditDeleteDB usertoadd = new UserAddEditDeleteDB(user);
             if (usertoadd.AddUser())
             {
                 TempData["register"] = "Account has been successfully created. You can sign in.";
@@ -124,9 +214,28 @@ namespace Authn.Controllers
                 TempData["error"] = "User with provided userName or Email already exists, please try again";
                 return View("Register");
             }
-            
+
         }
 
+        //Logout
+        [Authorize]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return Redirect("/");
+        }
+
+
+        //DENIED Access
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [HttpGet("denied")]
+        public IActionResult Denied()
+        {
+            return View();
+        }
+
+
+        
 
     }
 }

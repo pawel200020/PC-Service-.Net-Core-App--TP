@@ -73,7 +73,6 @@ namespace Authn.Data
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Roles")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("TEXT");
 

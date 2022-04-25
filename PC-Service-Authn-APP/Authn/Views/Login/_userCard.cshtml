@@ -1,0 +1,29 @@
+﻿@*@model Authn.Models.AppUserVM
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.UserName</h5>
+        <p class="card-text">@Html.DisplayFor(m => Model.)</p>
+        <p class="card-text">@Model.Description</p>
+        <a href="/Product/ShowDetails/@Model.Id" class="btn btn-primary">Show details</a>
+        <a href="/Product/Edit/@Model.Id" class="btn btn-warning">Edit</a>
+        <a href="/Product/Delete/@Model.Id" class="btn btn-danger">Delete</a>
+        <!-- Button trigger modal -->
+        <button value="@Model.Id" type="button" class="btn btn-primary edit-product-button" data-toggle="modal" data-target="#editModal">
+            Modal edit
+        </button>
+        <button value="@Model.Id" type="button" class="btn btn-primary details-product-button" data-toggle="modal" data-target="#detailsModal">
+            Moodal details
+        </button>
+    </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>*@

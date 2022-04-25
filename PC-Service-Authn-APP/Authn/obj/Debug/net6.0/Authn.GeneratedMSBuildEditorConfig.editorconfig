@@ -35,6 +35,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyUGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/Denied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -57,6 +69,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/_userCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cX3VzZXJDYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Shared/Error.cshtml]
