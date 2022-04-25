@@ -58,6 +58,7 @@ namespace Authn.Models
         [StringLength(50, MinimumLength = 2, ErrorMessage = "City must be 2 char long.")]
         [Display(Name = "Country")]
         public string Country { get; set; }
+       
         public string Roles { get; set; }
         public List<string> RoleList
         {

@@ -1,4 +1,5 @@
-﻿using Authn.DataDAO;
+﻿using Authn.Data;
+using Authn.DataDAO;
 using Authn.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -10,9 +11,42 @@ namespace Authn.Controllers
 {
     public class LoginController : Controller
     {
-        public IActionResult Index()
+        [Authorize(Roles ="Admin")]
+        public IActionResult List()
         {
-            return View();
+            UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+            List<AppUser> users = allUsers.getAllUsers();
+            return View(users);
+        }
+        public IActionResult Edit(int id)
+        {
+            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(oneUserDB.getUserVM());
+        }
+        [HttpPost("Edit")]
+        public async Task<IActionResult> ProcessEdit(AppUserVM user)
+        {
+
+            //UserAddDB usertoadd = new UserAddDB(user);
+            if (true)
+            {
+                TempData["pass"] = "Account has been successfully modfied. You can sign in.";
+                return View("list");
+            }
+            else
+            {
+                TempData["error"] = "some error occured please try again later";
+                return View("list");
+            }
+
+        }
+
+
+        [Authorize(Roles = "Admin")]
+        public IActionResult Details(int id)
+        {
+            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(oneUserDB.getUser());
         }
         [HttpGet("login")]
         public IActionResult Login(string returnUrl)
@@ -92,6 +126,7 @@ namespace Authn.Controllers
             }
             
         }
+
 
     }
 }
