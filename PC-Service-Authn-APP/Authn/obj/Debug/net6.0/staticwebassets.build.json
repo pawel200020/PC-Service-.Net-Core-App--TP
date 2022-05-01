@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s7rYmVyZHTn1prnsm6Hh5WmtML4cpZxLvytXnrn2oaY=",
+  "Hash": "ruUuubd64rvpEQ3k3RGbiMbGrUGhChCDzx40VSI0Q6A=",
   "Source": "Authn",
   "BasePath": "_content/Authn",
   "Mode": "Default",
@@ -153,12 +153,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min_1.css",
       "SourceId": "Authn",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\",
       "BasePath": "_content/Authn",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min_1.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,7 +167,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min_1.css"
+    },
+    {
+      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min_1.css.map",
+      "SourceId": "Authn",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\",
+      "BasePath": "_content/Authn",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min_1.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min_1.css.map"
     },
     {
       "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",

@@ -153,8 +153,15 @@ namespace Authn.Controllers
         [HttpGet("login")]
         public IActionResult Login(string returnUrl)
         {
-            ViewData["returnUrl"] = returnUrl;
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToRoute(new { controller = "Home", action = "Index" });
+            }
+            else
+            {
+                ViewData["returnUrl"] = returnUrl;
+                return View();
+            }
         }
         [HttpPost("login")]
         public async Task<IActionResult> ValidateLogin(string userName, string password, string returnUrl)

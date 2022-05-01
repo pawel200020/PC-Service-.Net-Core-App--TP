@@ -1,13 +1,15 @@
 ﻿@{
     bool isAdmin()
     {
-        foreach(var item in User.Claims)
+        foreach (var item in User.Claims)
         {
-            if(@item.Type=="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"){
+            if (@item.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role")
+            {
                 if (@item.Value == "Admin")
                 {
                     return true;
-                }else
+                }
+                else
                 {
                     return false;
                 }
@@ -29,36 +31,68 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Authn</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">PC Service</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            @if (@Context.Request.Path == "/Home/Index" || @Context.Request.Path == "/" || @Context.Request.Path == "/Home")
+                            {
+                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            }
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            @if (@Context.Request.Path == "/Home/Privacy")
+                            {
+                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            }
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
+                            @if (@Context.Request.Path == "/Home/Secured")
+                            {
+                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
+                            }
+
                         </li>
                         @if (isAdmin())
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AdminPanel">Admin Panel</a>
+                            <li class="nav-item dropdown">
+                                @if (@Context.Request.Path == "/Login/list")
+                                {
+                                    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">Admin Panel</a>
+                                }
+                                else
+                                {
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">Admin Panel</a>
+                                }
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Login" asp-action="list">Users Panel</a>
+                                    @*                                    <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>*@
+                                </div>
                             </li>
-                            
-                        }
-                        @if(User.Identity.IsAuthenticated)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UserPanel">User Panel</a>
-                            </li>
+
                         }
                     </ul>
                     <partial name="_LoginPartial" />
