@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Code\UJ\Team_Project\PC-Service-Authn-APP\Authn
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Deliveries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Deliveries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Deliveries/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Deliveries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Deliveries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Home/AdminPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pblBhbmVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -73,6 +93,70 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Login/_userCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cX3VzZXJDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/PartsTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNUeXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/PartsTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNUeXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/PartsTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNUeXBlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/PartsTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNUeXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/PartsTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNUeXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Parts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Parts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Parts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Parts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Parts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Repairs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Repairs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Repairs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Repairs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Repairs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Repairs/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyc1xTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Code/UJ/Team_Project/PC-Service-Authn-APP/Authn/Views/Shared/Error.cshtml]

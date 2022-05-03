@@ -50,6 +50,16 @@ namespace Authn.Data
             );
         }
 
-        public DbSet<Authn.Models.AppUserVM> AppUserVM { get; set; }
+
+        public DbSet<Authn.Models.Repair> Repair { get; set; }
+
+
+        public DbSet<Authn.Models.Delivery> Delivery { get; set; }
+
+
+        public DbSet<Authn.Models.PartsTypes> PartsTypes { get; set; }
+
+
+        public DbSet<Authn.Models.Part> Part { get; set; }
     }
 }

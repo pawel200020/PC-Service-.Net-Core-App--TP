@@ -176,7 +176,7 @@ namespace Authn.Controllers
                 var claims = new List<Claim>();
                 claims.Add(new Claim("userName", userInfo["UserName"]));
                 claims.Add(new Claim(ClaimTypes.Name, userInfo["FirstName"]));
-                claims.Add(new Claim(ClaimTypes.NameIdentifier, userInfo["LastName"]));
+                claims.Add(new Claim(ClaimTypes.NameIdentifier, userInfo["UserName"]));
                 claims.Add(new Claim(ClaimTypes.Email, userInfo["Email"]));
                 foreach (var role in roles)
                 {

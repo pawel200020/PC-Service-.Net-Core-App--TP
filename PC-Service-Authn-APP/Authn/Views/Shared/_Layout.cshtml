@@ -63,6 +63,16 @@
 
                         </li>
                         <li class="nav-item">
+                            @if (@Context.Request.Path == "/Repairs/Search")
+                            {
+                                <a class="nav-link active" asp-area="" asp-controller="Repairs" asp-action="Search">Search for Repair</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" asp-area="" asp-controller="Repairs" asp-action="Search">Search for Repair</a>
+                            }
+                        </li>
+                        <li class="nav-item">
                             @if (@Context.Request.Path == "/Home/Secured")
                             {
                                 <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
@@ -76,7 +86,7 @@
                         @if (isAdmin())
                         {
                             <li class="nav-item dropdown">
-                                @if (@Context.Request.Path == "/Login/list")
+                                @if (@Context.Request.Path == "/Login/list" || @Context.Request.Path == "/Repairs" || @Context.Request.Path == "/Deliveries" || @Context.Request.Path == "/PartsTypes " || @Context.Request.Path == "/Parts")
                                 {
                                     <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">Admin Panel</a>
                                 }
@@ -86,6 +96,10 @@
                                 }
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" asp-area="" asp-controller="Login" asp-action="list">Users Panel</a>
+                                     <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="index">Repairs Panel</a>
+                                     <a class="dropdown-item" asp-area="" asp-controller="Deliveries" asp-action="index">Deliveries Panel</a>
+                                     <a class="dropdown-item" asp-area="" asp-controller="PartsTypes" asp-action="index">Parts Types Panel</a>
+                                     <a class="dropdown-item" asp-area="" asp-controller="Parts" asp-action="index">Parts Panel</a>
                                     @*                                    <a class="dropdown-item" href="#">Another action</a>
                                         <a class="dropdown-item" href="#">Something else here</a>
                                         <div class="dropdown-divider"></div>

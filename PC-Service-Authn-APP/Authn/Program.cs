@@ -5,12 +5,15 @@ using Microsoft.Extensions.Configuration;
 using System.Configuration;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Builder;
+using System.Globalization;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //depndecy injection
 Microsoft.Extensions.Configuration.ConfigurationManager configuration = builder.Configuration;
 builder.Services.AddControllersWithViews();
+Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US", false);
 builder.Services.AddDbContext<AuthDbContext>(options => options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
 {
