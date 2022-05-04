@@ -47,7 +47,7 @@ namespace Authn.Controllers
         // GET: Parts/Create
         public IActionResult Create()
         {
-            var partsDAO = new PartTypesGetToList("DataSource=Data\\app.db");
+            var partsDAO = new PartTypesDAO("DataSource=Data\\app.db");
             ViewBag.Parts = partsDAO.GetPartTypes();
             return View();
         }
@@ -71,7 +71,7 @@ namespace Authn.Controllers
         // GET: Parts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            var partsDAO = new PartTypesGetToList("DataSource=Data\\app.db");
+            var partsDAO = new PartTypesDAO("DataSource=Data\\app.db");
             ViewBag.Parts = partsDAO.GetPartTypes();
             if (id == null)
             {

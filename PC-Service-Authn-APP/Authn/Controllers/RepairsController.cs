@@ -17,15 +17,16 @@ namespace Authn.Controllers
     {
         private readonly AuthDbContext _context;
         private readonly IWebHostEnvironment hostEnvironment;
-
+        private RepairDAO repairDAO;
         public RepairsController(AuthDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
             this.hostEnvironment = hostEnvironment;
+            repairDAO = new RepairDAO("DataSource=Data\\app.db");
         }
 
         // GET: Repairs
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Repair.ToListAsync());
@@ -59,7 +60,7 @@ namespace Authn.Controllers
         // GET: Repairs/Create
         public IActionResult Create()
         {
-            var deliveriesDAO = new DelivertiesGetToList("DataSource=Data\\app.db");
+            var deliveriesDAO = new DelivertiesDAO("DataSource=Data\\app.db");
             ViewBag.Deliveries = deliveriesDAO.GetDeliveryMethods();
             return View();
         }
@@ -69,19 +70,26 @@ namespace Authn.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Brand,SerialNumber,Condition,Description,Delivery,Date,ImageFile,Status,Email")] Repair repair)
+        public async Task<IActionResult> Create([Bind("Id,Brand,SerialNumber,Condition,Description,Delivery,Date,ImageFile,Status,Email,Report,PartsUsed,Labour")] Repair repair)
         {
-            string wwwRootPath = hostEnvironment.WebRootPath;
-            string fileName = Path.GetFileNameWithoutExtension(repair.ImageFile.FileName);
-            string extension = Path.GetExtension(repair.ImageFile.FileName);
-            repair.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-            string path = Path.Combine(wwwRootPath + "\\images\\", fileName);
-            using (var fileStream = new FileStream(path, FileMode.Create))
-            {
-                await repair.ImageFile.CopyToAsync(fileStream);
-            }
+
+
             if (ModelState.IsValid)
             {
+                if (repair.ImageFile != null)
+                {
+                    string wwwRootPath = hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(repair.ImageFile.FileName);
+                    string extension = Path.GetExtension(repair.ImageFile.FileName);
+                    repair.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath + "\\images\\", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await repair.ImageFile.CopyToAsync(fileStream);
+                    }
+                }
+
+
                 repair.Status = "New";
                 _context.Add(repair);
                 await _context.SaveChangesAsync();
@@ -97,13 +105,14 @@ namespace Authn.Controllers
             {
                 return NotFound();
             }
-            //TODO - get old imageName From Database
+
             var repair = await _context.Repair.FindAsync(id);
             if (repair == null)
             {
                 return NotFound();
             }
-            var deliveriesDAO = new DelivertiesGetToList("DataSource=Data\\app.db");
+
+            var deliveriesDAO = new DelivertiesDAO("DataSource=Data\\app.db");
             ViewBag.Deliveries = deliveriesDAO.GetDeliveryMethods();
             return View(repair);
         }
@@ -113,8 +122,9 @@ namespace Authn.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Brand,SerialNumber,Condition,Description,Delivery,Date,Status,Email")] Repair repair)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Brand,SerialNumber,Condition,Description,Delivery,Date,Status,Email,Report,PartsUsed,Labour")] Repair repair)
         {
+            bool wasMesaage = false;
             if (id != repair.Id)
             {
                 return NotFound();
@@ -124,10 +134,86 @@ namespace Authn.Controllers
             {
                 try
                 {
-                    //var repairOLD = await _context.Repair.FindAsync(repair.Id);
-                    //repair.ImageName = repairOLD.ImageName;
+                    PartDAO partDAO = new PartDAO("DataSource=Data\\app.db");
+                    var oldItem = repairDAO.GetRepair(repair.Id);
+                    List<string> NonSufficientParts = new List<string>();
+                    if (oldItem != null)
+                    {
+                        repair.ImageName = oldItem.ImageName;
+                    }
+                    oldItem = repairDAO.GetRepairPartsUsed(repair.Id);
+
+                    if (oldItem != null)
+                    {
+                        var partsToChangeInDB = new Dictionary<string, int>();
+                        foreach (KeyValuePair<string, int> entry in repair.PartsUsedList)
+                        {
+                            if (oldItem.PartsUsedList.ContainsKey(entry.Key))
+                            {
+                                if (entry.Value - oldItem.PartsUsedList[entry.Key] != 0)
+                                    partsToChangeInDB.Add(entry.Key, entry.Value - oldItem.PartsUsedList[entry.Key]);
+                            }
+                            else
+                            {
+                                partsToChangeInDB.Add(entry.Key, entry.Value);
+                            }
+
+                        }
+                        foreach (KeyValuePair<string, int> entry in oldItem.PartsUsedList)
+                        {
+                            if (!repair.PartsUsedList.ContainsKey(entry.Key))
+                            {
+                                partsToChangeInDB.Add(entry.Key, -entry.Value);
+                            }
+                        }
+                        NonSufficientParts = partDAO.isEnoughPartInDatabase(partsToChangeInDB);
+                        if (NonSufficientParts.Count == 0)
+                        {
+                            foreach (KeyValuePair<string, int> entry in partsToChangeInDB)
+                            {
+                                partDAO.DecrementPart(entry.Key, entry.Value);
+                            }               
+                        }
+                        else
+                        {
+                            repair.PartsUsed = oldItem.PartsUsed;
+                            repair.PartsUsed = "";
+                            TempData["error"] = "there is not enough parts: ";
+                            foreach (var item in NonSufficientParts)
+                            {
+                                TempData["error"] += item + ", ";
+                            }
+                            wasMesaage = true;
+                        }
+                    }
+                    else
+                    {
+                        NonSufficientParts = partDAO.isEnoughPartInDatabase(repair.PartsUsedList);
+                        if (NonSufficientParts.Count == 0)
+                        {
+                            foreach (KeyValuePair<string, int> entry in repair.PartsUsedList)
+                            {
+                                partDAO.DecrementPart(entry.Key, entry.Value);
+                            }
+                        }
+                        else
+                        {
+                            repair.PartsUsed = "";
+                            TempData["error"] = "there is not enough parts: ";
+                            foreach (var item in NonSufficientParts)
+                            {
+                                TempData["error"] += item + ", ";
+                            }
+                            wasMesaage= true;
+                        }
+                    }
+                    if (!wasMesaage)
+                    {
+                        TempData["pass"] = "Item has been successfully modified";
+                    }
                     _context.Update(repair);
                     await _context.SaveChangesAsync();
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -178,7 +264,7 @@ namespace Authn.Controllers
                 }
 
             }
-            
+
             _context.Repair.Remove(repair);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

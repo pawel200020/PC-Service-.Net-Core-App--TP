@@ -80,6 +80,16 @@
                 <span asp-validation-for="Report" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="PartsUsed" class="control-label"></label>
+                <textarea asp-for="PartsUsed" class="form-control" rows=3></textarea>
+                <span asp-validation-for="PartsUsed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Labour" class="control-label"></label>
+                <input asp-for="Labour" class="form-control" />
+                <span asp-validation-for="Labour" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>

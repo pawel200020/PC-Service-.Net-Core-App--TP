@@ -3,15 +3,15 @@ using Microsoft.Data.Sqlite;
 
 namespace Authn.DataDAO
 {
-    public class DelivertiesGetToList
+    public class PartTypesDAO
     {
         private readonly string connectionString;
 
-        public DelivertiesGetToList(string connectionString)
+        public PartTypesDAO(string connectionString)
         {
             this.connectionString = connectionString;
         }
-        public List<Delivery> GetDeliveryMethods()
+        public List<Delivery> GetPartTypes()
         {
             var deliveryMethods = new List<Delivery>();
             using (var connection = new SqliteConnection(connectionString))
@@ -20,8 +20,8 @@ namespace Authn.DataDAO
                 connection.Open();
 
                 var command = connection.CreateCommand();
-                command.CommandText = @"SELECT Id, Name, Price
-                                        FROM Delivery";
+                command.CommandText = @"SELECT Id, Name
+                                        FROM PartsTypes";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -30,8 +30,7 @@ namespace Authn.DataDAO
                         new Delivery
                         {
                             Id = reader.GetInt32(0),
-                            Name = reader.GetString(1),
-                            Price = reader.GetDecimal(2)
+                            Name = reader.GetString(1)
                         });
 
                     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QfMY6X3Gdkp/zEqdx7v5Nax2XHSmZ2hcVMbth4d78Qg=",
+  "Hash": "uywAw+UtqSgEPx3QCTXAEeb/h1NiH1MBmbuoVVFHKTo=",
   "Source": "Authn",
   "BasePath": "_content/Authn",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\images\\222223244112.jpg"
     },
     {
-      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\images\\istockphoto-1023611324-612x612223213932.jpg",
+      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\images\\4_zu_3_moto_g31225533739.jpg",
       "SourceId": "Authn",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\",
       "BasePath": "_content/Authn",
-      "RelativePath": "images/istockphoto-1023611324-612x612223213932.jpg",
+      "RelativePath": "images/4_zu_3_moto_g31225533739.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\istockphoto-1023611324-612x612223213932.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\4_zu_3_moto_g31225533739.jpg"
     },
     {
-      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\images\\maxresdefault223526799.jpg",
+      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\images\\maxresdefault224724142.jpg",
       "SourceId": "Authn",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\",
       "BasePath": "_content/Authn",
-      "RelativePath": "images/maxresdefault223526799.jpg",
+      "RelativePath": "images/maxresdefault224724142.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\maxresdefault223526799.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\maxresdefault224724142.jpg"
     },
     {
       "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\js\\site.js",

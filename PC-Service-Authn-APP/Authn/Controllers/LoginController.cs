@@ -13,13 +13,14 @@ namespace Authn.Controllers
 {
     public class LoginController : Controller
     {
-
+        private AuthDAO authDAO;
         private readonly IConfiguration _configuration;
         
 
         public LoginController(IConfiguration configuration)
         {
             _configuration = configuration;
+            authDAO = new AuthDAO("DataSource=Data\\app.db");
             
         }
         //List<AppUser> users = (new UserGetAllDB(_configuration.GetConnectionString("DefaultConnection"))).getAllUsers();
@@ -33,8 +34,9 @@ namespace Authn.Controllers
         [Authorize(Roles ="Admin")]
         public IActionResult List()
         {
-            UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
-            List<AppUser> users = allUsers.getAllUsers();
+            // UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+
+            List<AppUser> users = authDAO.getAllUsers();//allUsers.getAllUsers();
             return View(users);
         }
 
@@ -48,26 +50,26 @@ namespace Authn.Controllers
         [HttpGet("details")]
         public IActionResult Details(int id)
         {
-            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
-            return View(oneUserDB.getUser());
+            //var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(authDAO.getUser(id));
         }
         [HttpGet("edit")]
         public IActionResult Edit(int id)
         {
-            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
-            return View(oneUserDB.getUserVM());
+            //var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(authDAO.getUserVM(id));
         }
         [HttpGet("changePassword")]
         public IActionResult ChangePassword(int id)
         {
-            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
-            return View(oneUserDB.getUserVM());
+            //var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(authDAO.getUserVM(id));
         }
         [HttpGet("delete")]
         public IActionResult Delete(int id)
         {
-            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
-            return View(oneUserDB.getUserVM());
+            //var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", id);
+            return View(authDAO.getUserVM(id));
         }
 
 
@@ -75,13 +77,13 @@ namespace Authn.Controllers
         [HttpPost("create")]
         public IActionResult ProcessCreate(AppUserVM user)
         {
-            UserAddEditDeleteDB adderService = new UserAddEditDeleteDB(user);
-            if (adderService.AddUser())
+            //UserAddEditDeleteDB adderService = new UserAddEditDeleteDB(user);
+            if (authDAO.AddUser(user))
             {
                 TempData["pass"] = "Account has been successfully Added. You can sign in.";
-                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
-                List<AppUser> users = allUsers.getAllUsers();
-                return View("list", users);
+                //UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                //List<AppUser> users = allUsers.getAllUsers();
+                return View("list", authDAO.getAllUsers());
             }
             else
             {
@@ -93,13 +95,13 @@ namespace Authn.Controllers
         public IActionResult ProcessEdit(AppUserVM user)
         {
 
-            UserAddEditDeleteDB usertoedit = new UserAddEditDeleteDB(user);
-            if (usertoedit.EditUser())
+            //UserAddEditDeleteDB usertoedit = new UserAddEditDeleteDB(user);
+            if (authDAO.EditUser(user))
             {
                 TempData["pass"] = "Account has been successfully modfied. You can sign in.";
-                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
-                List<AppUser> users = allUsers.getAllUsers();
-                return View("list", users);
+                //UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                //List<AppUser> users = allUsers.getAllUsers();
+                return View("list", authDAO.getAllUsers());
             }
             else
             {
@@ -112,13 +114,13 @@ namespace Authn.Controllers
         public IActionResult ProcessChangePassword(AppUserVM user)
         {
 
-            UserAddEditDeleteDB usertoedit = new UserAddEditDeleteDB(user);
-            if (usertoedit.ChangeUserPassword())
+            //UserAddEditDeleteDB usertoedit = new UserAddEditDeleteDB(user);
+            if (authDAO.ChangeUserPassword(user))
             {
                 TempData["pass"] = "Password has been successfuly changed";
-                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
-                List<AppUser> users = allUsers.getAllUsers();
-                return View("list", users);
+                //UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                //List<AppUser> users = allUsers.getAllUsers();
+                return View("list", authDAO.getAllUsers());
             }
             else
             {
@@ -130,16 +132,16 @@ namespace Authn.Controllers
         [HttpPost("delete")]
         public IActionResult ProcessDelete(AppUserVM user)
         {
-            var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", user.UserId);
-            user = oneUserDB.getUserVM();
-            UserAddEditDeleteDB usertodelete = new UserAddEditDeleteDB(user);
+            //var oneUserDB = new UserGetOneDB("DataSource=Data\\app.db", user.UserId);
+            user = authDAO.getUserVM(user.UserId);
+            //UserAddEditDeleteDB usertodelete = new UserAddEditDeleteDB(user);
 
-            if (usertodelete.DeleteUser())
+            if (authDAO.DeleteUser(user))
             {
                 TempData["pass"] = "Account has been successfully removed";
-                UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
-                List<AppUser> users = allUsers.getAllUsers();
-                return View("list", users);
+                //UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
+                //List<AppUser> users = allUsers.getAllUsers();
+                return View("list", authDAO.getAllUsers());
             }
             else
             {
@@ -166,10 +168,10 @@ namespace Authn.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> ValidateLogin(string userName, string password, string returnUrl)
         {
-            UserAuthDB claim = new UserAuthDB(userName, password);
+            //UserAuthDB claim = new UserAuthDB(userName, password);
             Dictionary<string, string> userInfo;
             List<string> roles;
-            (userInfo, roles) = claim.ValidateUser();
+            (userInfo, roles) = authDAO.ValidateUser(userName,password);
             ViewData["returnUrl"] = returnUrl;
             if (userInfo.ContainsKey("UserName"))
             {
@@ -210,8 +212,8 @@ namespace Authn.Controllers
         public IActionResult ProcessRegister(AppUserVM user)
         {
 
-            UserAddEditDeleteDB usertoadd = new UserAddEditDeleteDB(user);
-            if (usertoadd.AddUser())
+            //UserAddEditDeleteDB usertoadd = new UserAddEditDeleteDB(user);
+            if (authDAO.AddUser(user))
             {
                 TempData["register"] = "Account has been successfully created. You can sign in.";
                 return View("login");
