@@ -1,0 +1,102 @@
+﻿@model Authn.Models.Repair
+
+@{
+    ViewData["Title"] = "Create";
+}
+@ViewBag.Deliveries
+
+@{
+    bool isAdmin()
+    {
+        foreach (var item in User.Claims)
+        {
+            if (@item.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role")
+            {
+                if (@item.Value == "Admin")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+<h1>Create</h1>
+
+<h4>Repair</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateUser" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SerialNumber" class="control-label"></label>
+                <input asp-for="SerialNumber" class="form-control" />
+                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Condition" class="control-label"></label>
+                <select class="form-select" asp-for="Condition" id="selectmp">
+                    <option>Flawless</option>
+                    <option>Good</option>
+                    <option>Used</option>
+                    <option>Damaged Used</option>
+                    <option>Broken</option>
+                </select>
+                <span asp-validation-for="Condition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control" rows=3></textarea>
+
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delivery" class="control-label"></label>
+                <select asp-for="Delivery" class="form-select">
+                    @foreach (var item in ViewBag.Deliveries)
+                    {
+                        <option value="@item.Name">@item.Name @item.Price</option>
+                    }
+                </select>
+                <span asp-validation-for="Delivery" class="text-danger"></span>
+            </div>
+            <div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" class="form-control" accept="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Authn.Data;
 using Authn.Models;
 using Authn.DataDAO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Authn.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class PartsController : Controller
     {
         private readonly AuthDbContext _context;

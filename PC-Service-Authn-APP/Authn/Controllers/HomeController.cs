@@ -15,12 +15,13 @@ namespace Authn.Controllers
         public IActionResult Index()
         {
             return View();
+
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+        //public IActionResult Privacy()
+        //{
+        //    return View();
+        //}
         [Authorize]
         public IActionResult Secured()
         {

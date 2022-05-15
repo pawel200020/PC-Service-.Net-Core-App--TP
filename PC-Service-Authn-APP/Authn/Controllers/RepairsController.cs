@@ -9,6 +9,7 @@ using Authn.Data;
 using Authn.Models;
 using Authn.DataDAO;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace Authn.Controllers
 {
@@ -31,10 +32,34 @@ namespace Authn.Controllers
         {
             return View(await _context.Repair.ToListAsync());
         }
+
+
         [AllowAnonymous]
         public IActionResult Search()
         {
             return View();
+        }
+        //[HttpPost("ProcessSearch")]
+        [AllowAnonymous]
+        public IActionResult ProcessSearch(int id)
+        {
+            var repair = repairDAO.GetRepair(id);
+            if (repair != null)
+            {
+                return PartialView(repair);
+            }
+            TempData["error"] = "Current repair does not exist please check your repair id";
+            return PartialView("notFound");
+
+            
+        }
+
+
+        public IActionResult userList()
+        {
+            string email = this.User.FindFirstValue(ClaimTypes.Email);
+            var repairs = repairDAO.GetRepairsUser(email);
+            return View(repairs);
         }
 
 
@@ -57,21 +82,57 @@ namespace Authn.Controllers
             return View(repair);
         }
 
+
+
+        public async Task<IActionResult> DetailsUser(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var repair = await _context.Repair
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (repair == null)
+            {
+                return NotFound();
+            }
+            if(repair.Email== this.User.FindFirstValue(ClaimTypes.Email))
+            {
+                return View("Details", repair);
+            }
+            else
+            {
+                return RedirectToAction("Denied", "Login");
+            }
+            
+        }
+
+
+
+
         // GET: Repairs/Create
+        [Authorize(Roles ="Admin")]
         public IActionResult Create()
+        {
+            var deliveriesDAO = new DelivertiesDAO("DataSource=Data\\app.db");
+            ViewBag.Deliveries = deliveriesDAO.GetDeliveryMethods();
+            string role = this.User.FindFirstValue(ClaimTypes.Role);
+            Console.WriteLine("hello: " + role);
+            return View();
+        }
+        public IActionResult CreateUser()
         {
             var deliveriesDAO = new DelivertiesDAO("DataSource=Data\\app.db");
             ViewBag.Deliveries = deliveriesDAO.GetDeliveryMethods();
             return View();
         }
-
-        // POST: Repairs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Brand,SerialNumber,Condition,Description,Delivery,Date,ImageFile,Status,Email,Report,PartsUsed,Labour")] Repair repair)
+        public async Task<IActionResult> CreateUser([Bind("Id,Brand,SerialNumber,Condition,Description,Delivery,Date,ImageFile,Status,Email,Report,PartsUsed,Labour")] Repair repair)
         {
+
+
 
 
             if (ModelState.IsValid)
@@ -91,14 +152,57 @@ namespace Authn.Controllers
 
 
                 repair.Status = "New";
+                repair.Email = this.User.FindFirstValue(ClaimTypes.Email);
                 _context.Add(repair);
                 await _context.SaveChangesAsync();
+
+                return RedirectToAction("userList","Repairs");
+            }
+            return View(repair);
+        }
+        // POST: Repairs/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,Brand,SerialNumber,Condition,Description,Delivery,Date,ImageFile,Status,Email,Report,PartsUsed,Labour")] Repair repair)
+        {
+
+
+            
+
+            if (ModelState.IsValid)
+            {
+                if (repair.ImageFile != null)
+                {
+                    string wwwRootPath = hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(repair.ImageFile.FileName);
+                    string extension = Path.GetExtension(repair.ImageFile.FileName);
+                    repair.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath + "\\images\\", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await repair.ImageFile.CopyToAsync(fileStream);
+                    }
+                }
+
+
+                repair.Status = "New";
+                string role = this.User.FindFirstValue(ClaimTypes.Role);
+                if (!role.Contains("Admin"))
+                {
+                    repair.Email= this.User.FindFirstValue(ClaimTypes.Email);
+                }
+                _context.Add(repair);
+                await _context.SaveChangesAsync();
+                
                 return RedirectToAction(nameof(Index));
             }
             return View(repair);
         }
 
         // GET: Repairs/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -141,7 +245,7 @@ namespace Authn.Controllers
                     {
                         repair.ImageName = oldItem.ImageName;
                     }
-                    oldItem = repairDAO.GetRepairPartsUsed(repair.Id);
+                    oldItem = repairDAO.GetRepair(repair.Id);
 
                     if (oldItem != null)
                     {
@@ -232,6 +336,7 @@ namespace Authn.Controllers
         }
 
         // GET: Repairs/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

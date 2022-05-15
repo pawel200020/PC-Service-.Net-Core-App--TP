@@ -4,6 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
+
 <h1>Details</h1>
 
 <div>
@@ -73,6 +74,37 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+    @{
+    bool isAdmin()
+    {
+        foreach (var item in User.Claims)
+        {
+            if (@item.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role")
+            {
+                if (@item.Value == "Admin")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+    @if (isAdmin())
+    {
+         <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+        <a asp-action="Index">Back to List</a>
+    }
+    else
+    {
+        <a asp-action="userList">Back to List</a>
+    }
+
+    
 </div>

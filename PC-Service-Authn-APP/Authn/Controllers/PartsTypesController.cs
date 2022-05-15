@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Authn.Data;
 using Authn.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Authn.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class PartsTypesController : Controller
     {
         private readonly AuthDbContext _context;
