@@ -15,13 +15,13 @@ namespace Authn.Controllers
     {
         private AuthDAO authDAO;
         private readonly IConfiguration _configuration;
-        
+
 
         public LoginController(IConfiguration configuration)
         {
             _configuration = configuration;
             authDAO = new AuthDAO("DataSource=Data\\app.db");
-            
+
         }
         //List<AppUser> users = (new UserGetAllDB(_configuration.GetConnectionString("DefaultConnection"))).getAllUsers();
 
@@ -31,18 +31,39 @@ namespace Authn.Controllers
 
 
         //List Main Element
-        [Authorize(Roles ="Admin")]
-        public IActionResult List()
+        [Authorize(Roles = "Admin")]
+        public IActionResult List(string searchString, string searchCriteria, string Role)
         {
             // UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
 
             List<AppUser> users = authDAO.getAllUsers();//allUsers.getAllUsers();
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                if (searchCriteria == "UserName")
+                {
+                    users = users.Where(s => s.UserName.Equals(searchString)).ToList();
+                }
+                else if (searchCriteria == "Email")
+                {
+                    users = users.Where(s => s.Email.Equals(searchString)).ToList();
+                }
+            }
+            if (!String.IsNullOrEmpty(Role))
+            {
+
+
+                users = users.Where(s => s.RoleList.Contains(Role)).ToList();
+
+
+            }
+            ViewBag.Selection = Role;
+            ViewBag.SearchStr = searchString;
             return View(users);
         }
 
         //CRUD HTTP GET operations
         [HttpGet("create")]
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -138,7 +159,7 @@ namespace Authn.Controllers
 
             if (authDAO.DeleteUser(user))
             {
-                TempData["pass"] = "Account has been successfully removed";
+                TempData["warning"] = "Account has been successfully removed";
                 //UserGetAllDB allUsers = new UserGetAllDB("DataSource=Data\\app.db");
                 //List<AppUser> users = allUsers.getAllUsers();
                 return View("list", authDAO.getAllUsers());
@@ -150,7 +171,7 @@ namespace Authn.Controllers
             }
 
         }
-     
+
         //Login GET & POST
         [HttpGet("login")]
         public IActionResult Login(string returnUrl)
@@ -171,7 +192,7 @@ namespace Authn.Controllers
             //UserAuthDB claim = new UserAuthDB(userName, password);
             Dictionary<string, string> userInfo;
             List<string> roles;
-            (userInfo, roles) = authDAO.ValidateUser(userName,password);
+            (userInfo, roles) = authDAO.ValidateUser(userName, password);
             ViewData["returnUrl"] = returnUrl;
             if (userInfo.ContainsKey("UserName"))
             {
@@ -211,7 +232,7 @@ namespace Authn.Controllers
         [HttpPost("register")]
         public IActionResult ProcessRegister(AppUserVM user)
         {
-
+            user.Roles = "User";
             //UserAddEditDeleteDB usertoadd = new UserAddEditDeleteDB(user);
             if (authDAO.AddUser(user))
             {
@@ -244,7 +265,7 @@ namespace Authn.Controllers
         }
 
 
-        
+
 
     }
 }

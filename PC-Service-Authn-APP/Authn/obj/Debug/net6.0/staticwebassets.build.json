@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HkS5KFKiJZoTv4sZ3P+g67jG/kXDxxVtFcmnlzO2ayk=",
+  "Hash": "x4Fx08POLJEciO/hkKcqlH850uwtCIIVkFhY/95Au2I=",
   "Source": "Authn",
   "BasePath": "_content/Authn",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot\\images\\4_zu_3_moto_g31225533739.jpg"
     },
     {
+      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\images\\cross.png",
+      "SourceId": "Authn",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\",
+      "BasePath": "_content/Authn",
+      "RelativePath": "images/cross.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cross.png"
+    },
+    {
       "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\images\\main.jpg",
       "SourceId": "Authn",
       "SourceType": "Discovered",
@@ -202,23 +219,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\pr_2019_7_11_15_50_19_551_02 (1)223649863.png"
-    },
-    {
-      "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\images\\SplWsQjenOOOHFeC224900255.png",
-      "SourceId": "Authn",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\",
-      "BasePath": "_content/Authn",
-      "RelativePath": "images/SplWsQjenOOOHFeC224900255.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\SplWsQjenOOOHFeC224900255.png"
     },
     {
       "Identity": "D:\\Code\\UJ\\Team_Project\\PC-Service-Authn-APP\\Authn\\wwwroot\\js\\site.js",

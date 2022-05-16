@@ -1,4 +1,4 @@
-﻿using Authn.CustomAnnotation;
+﻿
 using Authn.DataDAO;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;

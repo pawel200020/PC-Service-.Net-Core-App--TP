@@ -6,96 +6,221 @@
 @{
     var tempDataerror = TempData["error"] as string;
     var tempDatapass = TempData["pass"] as string;
+    var tempDatawarn = TempData["warning"] as string;
 
 }
 @if (!string.IsNullOrEmpty(tempDatapass))
 {
-    <div class="alert alert-success" role="alert">
-        @tempDatapass
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <b>@tempDatapass</b>
     </div>
+
 }
 @if (!string.IsNullOrEmpty(tempDataerror))
 {
-    <div class="alert-danger" style ="padding: 20px;">
-        @tempDataerror
+
+    <div class="alert alert-dismissible alert-danger">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+       <b> @tempDataerror</b>
     </div>
 }
+@if (!string.IsNullOrEmpty(tempDatawarn))
+{
 
-<h1>Index</h1>
+    <div class="alert alert-dismissible alert-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <h4 class="alert-heading">Warning!</h4>
+        <p class="mb-0">@tempDatawarn</p>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SerialNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Condition)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Delivery)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                Total Cost
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+}
+<h1>Repairs</h1>
+<div class="row">
+
+    <div class="col-md-2 border-right">
+        <div id="boxlist2">
+            @using (Html.BeginForm())
+            {
+                <form class="d-flex">
+                    <div>
+                        <b>Search by:</b>
+                        <ul>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="Id" />
+                                <label>Id</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="SerialNumber" />
+                                <label>Serial Number</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="DeviceName" />
+                                <label>Device Name</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="Email" />
+                                <label>Email</label>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" name="SearchString" id="SearchString" value="@(ViewBag.SearchStr ?? String.Empty)">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            }
+        </div>
+        <div id="boxlist2">
+            <b>Status</b>
+            <form>
+                <div class="form-group">
+                    <label class="control-label"></label>
+                    <select class="form-select" id="searchStatus" name="searchStatus">
+                        @if (ViewBag.Selection == "New")
+                        {
+                            <option selected="selected">New</option>
+                        }
+                        else
+                        {
+                            <option>New</option>
+                        }
+                        @if (ViewBag.Selection == "Confirmed")
+                        {
+                            <option selected="selected">Confirmed</option>
+                        }
+                        else
+                        {
+                            <option>Confirmed</option>
+                        }
+                        @if (ViewBag.Selection == "In sevice")
+                        {
+                            <option selected="selected">In sevice</option>
+                        }
+                        else
+                        {
+                            <option>In sevice</option>
+                        }
+                        @if (ViewBag.Selection == "Waiting for parts")
+                        {
+                            <option selected="selected">Waiting for parts</option>
+                        }
+                        else
+                        {
+                            <option>Waiting for parts</option>
+                        }
+                        @if (ViewBag.Selection == "Ready to pick up")
+                        {
+                            <option selected="selected">Ready to pick up</option>
+                        }
+                        else
+                        {
+                            <option>Ready to pick up</option>
+                        }
+                        @if (ViewBag.Selection == "Finished")
+                        {
+                            <option selected="selected">Finished</option>
+                        }
+                        else
+                        {
+                            <option>Finished</option>
+                        }
+                    </select>
+                    <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+
+    </div>
+    <div id="boxlist2">
+        <b> Go back to all repairs</b>
+        <form>
+            <button class="btn btn-primary" type="submit">Full list</button>
+        </form>
+    </div>
+</div>
+<div class="col-md-10">
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Brand)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.SerialNumber)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Condition)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Delivery)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Date)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TotalCost)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Brand)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SerialNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Condition)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Delivery)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    Total Cost
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Brand)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SerialNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Condition)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Delivery)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalCost)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+

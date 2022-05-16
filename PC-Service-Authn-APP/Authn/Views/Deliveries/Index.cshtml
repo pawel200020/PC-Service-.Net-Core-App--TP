@@ -3,39 +3,101 @@
 @{
     ViewData["Title"] = "Index";
 }
+@{
+    var tempDataerror = TempData["error"] as string;
+    var tempDatapass = TempData["pass"] as string;
+    var tempDatawarn = TempData["warning"] as string;
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
 }
-    </tbody>
-</table>
+
+@if (!string.IsNullOrEmpty(tempDatapass))
+{
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <b>@tempDatapass</b>
+    </div>
+
+}
+@if (!string.IsNullOrEmpty(tempDataerror))
+{
+
+    <div class="alert alert-dismissible alert-danger">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+       <b> @tempDataerror</b>
+    </div>
+}
+@if (!string.IsNullOrEmpty(tempDatawarn))
+{
+
+    <div class="alert alert-dismissible alert-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <h4 class="alert-heading">Warning!</h4>
+        <p class="mb-0">@tempDatawarn</p>
+    </div>
+
+}
+
+
+<h1>Deliveries</h1>
+
+
+<div class="row">
+    <div class="col-md-2 border-right">
+
+        <div id="boxlist2">
+            @using (Html.BeginForm())
+            {
+                <form class="d-flex">
+                    <b>Search by deliverier name:</b>
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" name="SearchString" id="SearchString" value="@(ViewBag.SearchStr ?? String.Empty)">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            }
+        </div>
+        <div id="boxlist2">
+            <b> Go back to all deliveries</b>
+            <form>
+                <button class="btn btn-primary" type="submit">Full list</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

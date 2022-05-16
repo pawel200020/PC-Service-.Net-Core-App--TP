@@ -4,67 +4,112 @@
     ViewData["Title"] = "Index";
 }
 <h3>Your repairs list</h3>
+<div class="row">
+    <div class="col-md-2 border-right">
+        <div id="boxlist2">
+            @using (Html.BeginForm())
+            {
+                <form class="d-flex">
+                    <div>
+                        <b>Search by:</b>
+                        <ul>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="Id" />
+                                <label>Id</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="SerialNumber" />
+                                <label>Serial Number</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="DeviceName" />
+                                <label>Device Name</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" name="SearchString" id="SearchString" value="@(ViewBag.SearchStr ?? String.Empty)">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            }
+        </div>
+        <div id="boxlist2">
+            <b> Go back to all repairs</b>
+            <form>
+                <button class="btn btn-primary" type="submit">Full list</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <p>
+            <a asp-action="CreateUser">Add repair request</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Brand)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SerialNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Condition)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Delivery)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Date)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th>
+                        Total cost
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SerialNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Condition)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Delivery)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TotalCost)
+                        </td>
+                        <td>
+                            <a asp-action="DetailsUser" asp-route-id="@item.Id">Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
-<p>
-    <a asp-action="CreateUser">Add repair request</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SerialNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Condition)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Delivery)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                Total cost
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Brand)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.SerialNumber)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Condition)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Delivery)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Date)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TotalCost)
-                </td>
-                <td>
-                    <a asp-action="DetailsUser" asp-route-id="@item.Id">Details</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>

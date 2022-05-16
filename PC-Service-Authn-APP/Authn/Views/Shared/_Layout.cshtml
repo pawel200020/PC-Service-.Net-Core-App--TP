@@ -17,6 +17,24 @@
         }
         return false;
     }
+    bool isManager()
+    {
+        foreach (var item in User.Claims)
+        {
+            if (@item.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role")
+            {
+                if (@item.Value == "Manager")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
 }
 
 <!DOCTYPE html>
@@ -51,15 +69,15 @@
                                 <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                             }
                         </li>
-@*                        <li class="nav-item">
-                            @if (@Context.Request.Path == "/Home/Privacy")
-                            {
-                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                            }
-                            else
-                            {
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                            }
+                        @*                        <li class="nav-item">
+                        @if (@Context.Request.Path == "/Home/Privacy")
+                        {
+                        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        }
+                        else
+                        {
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        }
 
                         </li>*@
                         <li class="nav-item">
@@ -72,31 +90,51 @@
                                 <a class="nav-link" asp-area="" asp-controller="Repairs" asp-action="Search">Search for Repair</a>
                             }
                         </li>
-                        <li class="nav-item">
-                            @if (@Context.Request.Path == "/Home/Secured")
+                        @*                        <li class="nav-item">
+                        @if (@Context.Request.Path == "/Home/Secured")
+                        {
+                        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
+                        }
+                        else
+                        {
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
+                        }
+
+                        </li>*@
+                        <li class="nav-item dropdown">
+                            @if (@Context.Request.Path == "/Repairs/userList" || @Context.Request.Path == "/Repairs/CreateUser")
                             {
-                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
+                                <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">User Panel</a>
                             }
                             else
                             {
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Secured">Secured</a>
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">User Panel</a>
                             }
-
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="userList">My Repairs</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="CreateUser">Add Repair</a>
+                            </div>
                         </li>
-                         <li class="nav-item dropdown">
-                                @if (@Context.Request.Path == "/Repairs/userList" || @Context.Request.Path == "/Repairs/CreateUser")
+
+                        @if (isManager() || isAdmin())
+                        {
+                            <li class="nav-item dropdown">
+                                @if (@Context.Request.Path == "/Repairs" || @Context.Request.Path == "/Parts")
                                 {
-                                    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">User Panel</a>
+                                    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">Manager Panel</a>
                                 }
                                 else
                                 {
-                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">User Panel</a>
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="AdminPanel" role="button" aria-haspopup="true" aria-expanded="false">Manager Panel</a>
                                 }
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="userList">My Repairs</a>
-                                     <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="CreateUser">Add Repair</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="index">Repairs Panel</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Parts" asp-action="index">Parts Panel</a>
                                 </div>
                             </li>
+
+                        }
+
 
                         @if (isAdmin())
                         {
@@ -111,14 +149,15 @@
                                 }
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" asp-area="" asp-controller="Login" asp-action="list">Users Panel</a>
-                                     <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="index">Repairs Panel</a>
-                                     <a class="dropdown-item" asp-area="" asp-controller="Deliveries" asp-action="index">Deliveries Panel</a>
-                                     <a class="dropdown-item" asp-area="" asp-controller="PartsTypes" asp-action="index">Parts Types Panel</a>
-                                     <a class="dropdown-item" asp-area="" asp-controller="Parts" asp-action="index">Parts Panel</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Repairs" asp-action="index">Repairs Panel</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Parts" asp-action="index">Parts Panel</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Deliveries" asp-action="index">Deliveries Panel</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="PartsTypes" asp-action="index">Parts Types Panel</a>
+
                                     @*                                    <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>*@
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>*@
                                 </div>
                             </li>
 
@@ -138,7 +177,7 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - PC Service -
-            <a href="https://www.iubenda.com/privacy-policy/50780185" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+            <a href="https://www.iubenda.com/privacy-policy/50780185" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function(w, d) { var loader = function() { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

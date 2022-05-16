@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Authn.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin,Manager")]
     public class PartsController : Controller
     {
         private readonly AuthDbContext _context;
@@ -23,9 +23,22 @@ namespace Authn.Controllers
         }
 
         // GET: Parts
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, string searchType)
         {
-            return View(await _context.Part.ToListAsync());
+            var parts = await _context.Part.ToListAsync();
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                parts = parts.Where(s => s.Name.Equals(searchString)).ToList();
+            }
+            if (!string.IsNullOrEmpty(searchType))
+            {
+                parts = parts.Where(s => s.Type.Equals(searchType)).ToList();
+            }
+            var partsDAO = new PartTypesDAO("DataSource=Data\\app.db");
+            ViewBag.Parts = partsDAO.GetPartTypes();
+            ViewBag.Selection = searchType;
+            ViewBag.SearchStr = searchString;
+            return View(parts);
         }
 
         // GET: Parts/Details/5
@@ -65,6 +78,7 @@ namespace Authn.Controllers
             {
                 _context.Add(part);
                 await _context.SaveChangesAsync();
+                TempData["pass"] = "Part has been successfully created.";
                 return RedirectToAction(nameof(Index));
             }
             return View(part);
@@ -73,8 +87,8 @@ namespace Authn.Controllers
         // GET: Parts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            var partsDAO = new PartTypesDAO("DataSource=Data\\app.db");
-            ViewBag.Parts = partsDAO.GetPartTypes();
+            var partTypessDAO = new PartTypesDAO("DataSource=Data\\app.db");
+            ViewBag.Parts = partTypessDAO.GetPartTypes();
             if (id == null)
             {
                 return NotFound();
@@ -85,6 +99,7 @@ namespace Authn.Controllers
             {
                 return NotFound();
             }
+            
             return View(part);
         }
 
@@ -104,6 +119,12 @@ namespace Authn.Controllers
             {
                 try
                 {
+                    var partDao = new PartDAO("DataSource=Data\\app.db");
+                    var reparirDao = new RepairDAO("DataSource=Data\\app.db");
+                    var oldName = partDao.GetPartName(part.Id);
+                    if(oldName != part.Name) {
+                        reparirDao.UpdatePart(oldName, part.Name);
+                    }
                     _context.Update(part);
                     await _context.SaveChangesAsync();
                 }
@@ -118,8 +139,10 @@ namespace Authn.Controllers
                         throw;
                     }
                 }
+                TempData["pass"] = "Part has been successfully modified.";
                 return RedirectToAction(nameof(Index));
             }
+            
             return View(part);
         }
 
@@ -149,6 +172,7 @@ namespace Authn.Controllers
             var part = await _context.Part.FindAsync(id);
             _context.Part.Remove(part);
             await _context.SaveChangesAsync();
+            TempData["warning"] = "Part has been successfully removed.";
             return RedirectToAction(nameof(Index));
         }
 

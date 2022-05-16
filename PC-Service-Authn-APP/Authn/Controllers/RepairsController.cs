@@ -27,10 +27,45 @@ namespace Authn.Controllers
         }
 
         // GET: Repairs
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Index()
+        [Authorize(Roles = "Admin,Manager")]
+        public async Task<IActionResult> Index(string searchString,string searchCriteria,string searchStatus)
         {
-            return View(await _context.Repair.ToListAsync());
+            var repairs = await _context.Repair.ToListAsync();
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Console.WriteLine("criteria "+searchCriteria);
+                if (searchCriteria == "Id")
+                {
+                    try
+                    {
+                        int id = int.Parse(searchString);
+                        repairs = repairs.Where(s => s.Id.Equals(id)).ToList();
+                    } catch (Exception ex)
+                    {
+                        
+                    }
+                    
+                }
+                else if (searchCriteria == "SerialNumber")
+                {
+                    repairs = repairs.Where(s => s.SerialNumber.Equals(searchString)).ToList();
+                }
+                else if (searchCriteria == "DeviceName")
+                {
+                    repairs = repairs.Where(s => s.Brand.Equals(searchString)).ToList();
+                } else if(searchCriteria == "Email")
+                {
+                    repairs = repairs.Where(s => s.Email.Equals(searchString)).ToList();
+                }
+                
+            }
+            if (!String.IsNullOrEmpty(searchStatus))
+            {
+                repairs = repairs.Where(s => s.Status.Equals(searchStatus)).ToList();
+            }
+            ViewBag.Selection = searchStatus;
+            ViewBag.SearchStr = searchString;
+            return View(repairs);
         }
 
 
@@ -48,23 +83,48 @@ namespace Authn.Controllers
             {
                 return PartialView(repair);
             }
-            TempData["error"] = "Current repair does not exist please check your repair id";
             return PartialView("notFound");
 
             
         }
 
 
-        public IActionResult userList()
+        public IActionResult userList(string searchString, string searchCriteria)
         {
             string email = this.User.FindFirstValue(ClaimTypes.Email);
             var repairs = repairDAO.GetRepairsUser(email);
+            if (repairs == null)
+            {
+                repairs = new List<Repair>();
+            }
+            else
+            {
+                if (!String.IsNullOrEmpty(searchString))
+                {
+                    Console.WriteLine("criteria " + searchCriteria);
+                    if (searchCriteria == "Id")
+                    {
+                        int id = int.Parse(searchString);
+                        repairs = repairs.Where(s => s.Id.Equals(id)).ToList();
+                    }
+                    else if (searchCriteria == "SerialNumber")
+                    {
+                        repairs = repairs.Where(s => s.SerialNumber.Equals(searchString)).ToList();
+                    }
+                    else if (searchCriteria == "DeviceName")
+                    {
+                        repairs = repairs.Where(s => s.Brand.Equals(searchString)).ToList();
+                    }
+                    ViewBag.SearchStr = searchString;
+                }
+
+            }
             return View(repairs);
         }
 
 
         // GET: Repairs/Details/5
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -112,7 +172,7 @@ namespace Authn.Controllers
 
 
         // GET: Repairs/Create
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin,Manager")]
         public IActionResult Create()
         {
             var deliveriesDAO = new DelivertiesDAO("DataSource=Data\\app.db");
@@ -202,7 +262,7 @@ namespace Authn.Controllers
         }
 
         // GET: Repairs/Edit/5
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -336,7 +396,7 @@ namespace Authn.Controllers
         }
 
         // GET: Repairs/Delete/5
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -372,6 +432,7 @@ namespace Authn.Controllers
 
             _context.Repair.Remove(repair);
             await _context.SaveChangesAsync();
+            TempData["warning"] = "Item has been successfully removed";
             return RedirectToAction(nameof(Index));
         }
 

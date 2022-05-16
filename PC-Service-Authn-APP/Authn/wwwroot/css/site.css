@@ -63,3 +63,38 @@ p{
     margin:10px;
     padding: 10px;
 }
+#boxlist {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-size: 17px;
+    width: 200px;
+    background-color: lightsteelblue;
+}
+ul{
+    list-style-type: none;
+}
+.border-right {
+    border-right: 1px solid black;
+}
+#boxlist2 {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-size: 17px;
+    width: 190px;
+    background-color: #a2a6a6;
+}
+#SearchString{
+    width: 175px
+}
+
+#permDen{
+    text-align:center;
+    
+}
+#imageDen{
+    width: 400px
+}

@@ -125,6 +125,66 @@ namespace Authn.DataDAO
 
 
         }
+        public bool UpdateType(string oldName, string newName)
+        {
+            var repair = new List<Repair>();
+            using (var connection = new SqliteConnection(connectionString))
+            {
+
+                connection.Open();
+
+                var command = connection.CreateCommand();
+                command.CommandText = @" UPDATE Part
+                                         SET Type = $newType
+                                         WHERE Type = $oldType";
+                command.Parameters.AddWithValue("$newType", newName);
+                command.Parameters.AddWithValue("$oldType", oldName);
+                command.ExecuteNonQuery();
+                return true;
+
+            }
+        }
+        public string GetPartName(int Id)
+        {
+            var parts = new List<Part>();
+            using (var connection = new SqliteConnection(connectionString))
+            {
+
+                connection.Open();
+
+                var command = connection.CreateCommand();
+                command.CommandText = @"SELECT Id, Type, Name, Description, Price, Quantity
+                                        FROM Part
+                                        WHERE Id = $id";
+                command.Parameters.AddWithValue("$id", Id);
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        parts.Add(
+                        new Part
+                        {
+                            Id = reader.GetInt32(0),
+                            Type = reader.GetString(1),
+                            Name = reader.GetString(2),
+                            Description = reader.GetString(3),
+                            Price = reader.GetDecimal(4),
+                            Quantity = reader.GetInt32(5)
+                        });
+
+                    }
+                }
+                if (parts.Count > 0)
+                {
+                    return parts[0].Name;
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+        }
     }
 }
 

@@ -6,86 +6,176 @@
 @{
     var tempDataerror = TempData["error"] as string;
     var tempDatapass = TempData["pass"] as string;
+    var tempDatawarn = TempData["warning"] as string;
 
 }
 @if (!string.IsNullOrEmpty(tempDatapass))
 {
-    <div class="alert alert-success" role="alert">
-        @tempDatapass
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <b>@tempDatapass</b>
     </div>
+
 }
 @if (!string.IsNullOrEmpty(tempDataerror))
 {
-    <div class="alert-danger" style ="padding: 20px;">
-        @tempDataerror
+
+    <div class="alert alert-dismissible alert-danger">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+       <b> @tempDataerror</b>
     </div>
 }
+@if (!string.IsNullOrEmpty(tempDatawarn))
+{
 
+    <div class="alert alert-dismissible alert-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <h4 class="alert-heading">Warning!</h4>
+        <p class="mb-0">@tempDatawarn</p>
+    </div>
+
+}
 
 
 <h1>Registered users</h1>
+<div class="row">
+    <div class="col-md-2 border-right">
+        <div id="boxlist2">
+            @using (Html.BeginForm())
+            {
+                <form class="d-flex">
+                    <div>
+                        <b>Search by:</b>
+                        <ul>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="UserName" />
+                                <label>UserName</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="SearchCriteria" id="SearchCriteria" value="Email" />
+                                <label>Email</label>
+                            </li>
+                        </ul>
 
-<p>
-    <a asp-action="Create">Add New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UserName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Mobile)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Roles)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Country)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mobile)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Roles)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Country)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a> |
-                <a asp-action="ChangePassword" asp-route-id="@item.UserId">Change Password</a> |
-                <a asp-action="Details" asp-route-id="@item.UserId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                    </div>
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" name="SearchString" id="SearchString" value="@(ViewBag.SearchStr ?? String.Empty)">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            }
+        </div>
+
+
+        <div id="boxlist2">
+            <b>Role</b>
+            <form>
+                <div class="form-group">
+                    <label class="control-label"></label>
+                    <select class="form-select" id="Role" name="Role">
+                        @if (ViewBag.Selection == "Admin")
+                        {
+                            <option selected="selected">Admin</option>
+                        }
+                        else
+                        {
+                            <option>Admin</option>
+                        }
+                        @if (ViewBag.Selection == "Manager")
+                        {
+                            <option selected="selected">Manager</option>
+                        }
+                        else
+                        {
+                            <option>Manager</option>
+                        }
+                        @if (ViewBag.Selection == "User")
+                        {
+                            <option selected="selected">User</option>
+                        }
+                        else
+                        {
+                            <option>User</option>
+                        }
+                    </select>
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+        <div id="boxlist2">
+            <b> Go back to all users</b>
+            <form>
+                <button class="btn btn-primary" type="submit">Full list</button>
+            </form>
+        </div>
+
+
+
+    </div>
+    <div class="col-md-10">
+        <p>
+            <a asp-action="Create">Add New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Mobile)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Roles)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Country)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Mobile)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Roles)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Country)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a> |
+                            <a asp-action="ChangePassword" asp-route-id="@item.UserId">Change Password</a> |
+                            <a asp-action="Details" asp-route-id="@item.UserId">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Authn.Data;
 using Authn.Models;
 using Microsoft.AspNetCore.Authorization;
+using Authn.DataDAO;
 
 namespace Authn.Controllers
 {
@@ -62,6 +63,7 @@ namespace Authn.Controllers
             {
                 _context.Add(partsTypes);
                 await _context.SaveChangesAsync();
+                TempData["pass"] = "Part type has been successfully created.";
                 return RedirectToAction(nameof(Index));
             }
             return View(partsTypes);
@@ -80,6 +82,7 @@ namespace Authn.Controllers
             {
                 return NotFound();
             }
+
             return View(partsTypes);
         }
 
@@ -99,6 +102,9 @@ namespace Authn.Controllers
             {
                 try
                 {
+                    var partsTypesDao = new PartTypesDAO("DataSource=Data\\app.db");
+                    var partdao = new PartDAO("DataSource=Data\\app.db");
+                    partdao.UpdateType(partsTypesDao.GetPartOldName(partsTypes.Id), partsTypes.Name);
                     _context.Update(partsTypes);
                     await _context.SaveChangesAsync();
                 }
@@ -113,6 +119,8 @@ namespace Authn.Controllers
                         throw;
                     }
                 }
+
+                TempData["pass"] = "Part type has been successfully modified.";
                 return RedirectToAction(nameof(Index));
             }
             return View(partsTypes);
@@ -144,6 +152,7 @@ namespace Authn.Controllers
             var partsTypes = await _context.PartsTypes.FindAsync(id);
             _context.PartsTypes.Remove(partsTypes);
             await _context.SaveChangesAsync();
+            TempData["warning"] = "Item has been successfully removed.";
             return RedirectToAction(nameof(Index));
         }
 
