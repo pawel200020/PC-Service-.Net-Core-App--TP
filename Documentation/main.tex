@@ -4,6 +4,7 @@
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
 \title{Projekt zespołowy - Aplikacja webowa ułatwiająca pracę serwisu komputerowego}
 \author{Paweł Pyciński }
 \date{16 Maj 2022}
@@ -11,7 +12,9 @@
 \begin{document}
 
 \maketitle
-
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
 \section{Opis zasobów domeny biznesowej}
 \subsection{Jakie funkcje powinno wykonywać tworzone oprogramowaie?}
 \begin{itemize}
@@ -297,4 +300,6 @@ System wyświetli komunikat o poprawnie dodanym koncie użytkownika.
 \includegraphics[scale=0.5]{diagrams/sequence_diagram.png}
 \subsection{Diagram przypadków użycia}
 \includegraphics[scale=0.4]{diagrams/use_case_diagram.png}
+\subsection{Diagram klas}
+\includegraphics[scale=0.4]{diagrams/class_diagram.png}
 \end{document}
