@@ -37,7 +37,7 @@ you can search here repair by its id
     All parts which are in service with price and type. There are some search filters on left side.
 
 * Admin Panel
-    * *Repair* *Panel* and *Parts* *Panel* are the same as **Manager** has.
+    * *Repair* *Panel* and *Parts* *Panel* are the same as **Manager**.
 
     * User Panel
     ![alt text](/md_pics/Capture6.PNG)
@@ -52,7 +52,7 @@ you can search here repair by its id
     Here are all Types Parts which are in database.
 
 ## Repair overview
-The most important thing in this application are repairs. Here you can see (from Manager or Admin point of view) Edit form of a repair. 
+Repairs are The most important thing in this application. Here you can see (from Manager or Admin point of view) Edit form of a repair. 
 ![alt text](/md_pics/Capture9.PNG)
 
 
